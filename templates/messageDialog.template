@@ -1,0 +1,6 @@
+<template id="messageDialog">
+	<label><$=data.zsugarplus.getMessage("zsugarplus_subject")$></label>
+	<input type="text" id="zsugarplus_message_subject"></input>
+	<div id="zsugarplus_message_body">
+	</div>
+</template>

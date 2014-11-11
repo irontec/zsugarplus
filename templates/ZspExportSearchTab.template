@@ -1,0 +1,20 @@
+<template id="searchTab">
+<div id="zsugarplus_tabcontent_relations">
+<fieldset>
+<legend>zsugarplus_searchfilter</legend>
+<div id="zsugarplus_searchOpts">
+  <table>
+    <tr>
+    <td id="zsugarplus_cbSearchBox"></td>
+    <td id="zsugarplus_inSearchBox"></td>
+    <td id="zsugarplus_btnSearch"></td>
+    </tr>
+  </table>
+</div>
+</fieldset>
+<div id="zsugarplus_results">
+</div>
+<div id="zsugarplus_selected">
+</div>
+</div>
+</template>

@@ -1,0 +1,8 @@
+<template id="attachmentsDialog">
+	<fieldset style="height:78px">
+	<legend><$=data.zsugarplus.getMessage("zsugarplus_attachments")$></legend>
+	<div style="overflow:auto;height:70px">
+		<table id="zsugarplus_attachments_list"></table>
+	</div>
+        </fieldset>		
+</template>

@@ -1,0 +1,74 @@
+<zimlet name="com_irontec_zsugarplus" version="0.1"
+	description="Zimbra SugarCRM integration Zimlet">
+
+	<!-- zSugar+ Zimlet Sources -->
+	<include>ZspConfigDialog.js</include>
+	<include>ZspExportDialog.js</include>
+	<include>ZspExportMailTab.js</include>
+	<include>ZspExportOptionsTab.js</include>
+	<include>ZspExportSearchTab.js</include>
+	<include>ZspExportSugarTab.js</include>
+	<include>ZspSugarRest.js</include>
+	<include>ZspZimlet.js</include>
+	<handlerObject>ZspZimletH</handlerObject>
+
+	<include>md5.js</include>
+	<resource>redirect.jsp</resource>
+	<resource>base64coder.jar</resource>
+	<includeCSS>css/zsugarplus.css</includeCSS>
+	<includeCSS>css/images.css</includeCSS>
+
+	<!-- Dialog templates -->
+	<include>templates/ZspConfigDialog.template.js</include>
+	<include>templates/ZspExportMailTab.template.js</include>
+	<include>templates/ZspExportSearchTab.template.js</include>
+	<include>templates/tabNewObjects.template.js</include>
+	<include>templates/tabOptions.template.js</include>
+	<include>templates/helpDialog.template.js</include>
+	<include>templates/attachmentsDialog.template.js</include>
+	<include>templates/messageDialog.template.js</include>
+
+
+	<!-- Images/Other Resources -->
+	<resource>resources/iron_poweredby.png</resource>
+	<resource>resources/irontec.png</resource>
+	<resource>resources/ironsugar.png</resource>
+	<resource>resources/help.png</resource>
+	<resource>resources/loading.gif</resource>
+
+	<!-- Zimlet Panel Icon Definition -->
+	<zimletPanelItem label="zSugar+" icon="zsugarplusIcon">
+		<toolTipText>${msg.zsugar_tooltip}</toolTipText>
+		<dragSource type="ZmConv" />
+		<dragSource type="ZmMailMsg" />
+		<contextMenu>
+			<menuItem label="${msg.zsugarplus_config}" id="ZSUGARPLUS_CONFIG"
+				icon="Zsugar-configIcon" />
+			<menuItem label="${msg.zsupgarlus_about}" id="ZSUGARPLUS_ABOUT"
+				icon="ZSUGAR-aboutIcon" />
+		</contextMenu>
+	</zimletPanelItem>
+
+	<!-- Configuration Screen Definition -->
+	<userProperties>
+		<property type="string" name="zsugarplus_username" />
+		<property type="password" name="zsugarplus_password" />
+		<property type="string" name="zsugarplus_sugarurl"
+			value="http://www.example.com/sugarcrm/" />
+		<property type="boolean" name="zsugarplus_ldapauth" value="true" />
+		<property type="boolean" name="zsugarplus_accounts" value="true" />
+		<property type="boolean" name="zsugarplus_projects" value="true" />
+		<property type="boolean" name="zsugarplus_opportunities"
+			value="true" />
+		<property type="boolean" name="zsugarplus_cases" value="true" />
+		<property type="boolean" name="zsugarplus_leads" value="true" />
+		<property type="boolean" name="zsugarplus_autosearch" value="true" />
+		<property type="boolean" name="zsugarplus_incrfetch" value="true" />
+		<property type="boolean" name="zsugarplus_keepalive" value="false" />
+		<property type="number" name="zsugarplus_ui_size" value="1" />
+		<property type="number" name="zsugarplus_initab" value="1" />
+		<property type="number" name="zsugarplus_importconv" value="1" />
+	</userProperties>
+
+</zimlet>
+

@@ -1,0 +1,40 @@
+<template id="exportDialog">
+    <div id="zsugarplus_tabs">
+        <ul id="zsugarplus_tablist">
+            <li id="zsugarplus_tab_emails" class="active" onclick="zsugar_tab('emails')"><a><div class="ImgMessage"></div>
+			<$=data.zsugarplus.getMessage("zsugarplus_emails")$></a></li>
+            <li id="zsugarplus_tab_relations" onclick="zsugar_tab('relations')"><a><div class="ImgGroup"></div>
+			<$=data.zsugarplus.getMessage("zsugarplus_relations")$></a></li>
+            <li id="zsugarplus_tab_newobjects" onclick="zsugar_tab('newobjects')"><a><div class="ImgzsugarplusIcon"></div>
+			<$=data.zsugarplus.getMessage("zsugarplus_newobjects")$></a></li>
+            <li id="zsugarplus_tab_options" onclick="zsugar_tab('options')"><a><div class="ImgPreferences"></div>
+			<$=data.zsugarplus.getMessage("zsugarplus_otheroptions")$></a></li>
+        </ul>
+        <div id="zsugarplus_tabcontent">
+            <div id="zsugarplus_tabcontent_emails">
+	    </div>
+            <div id="zsugarplus_tabcontent_relations" style="display:none;">
+			<fieldset>
+			   <legend><$=data.zsugarplus.getMessage("zsugarplus_searchfilter")$></legend>
+			   <div id="zsugarplus_searchOpts"></div>
+			</fieldset>
+			<div id="drag">
+	 			<fieldset>
+					<legend><$=data.zsugarplus.getMessage("zsugarplus_searchresults")$></legend>
+			           <div id="results">
+			                   <table id="zsugarplus_searchresults"></table>
+			           </div>
+				   </fieldset>
+				   <fieldset>
+			           <legend><$=data.zsugarplus.getMessage("zsugarplus_dragrelations")$></legend>
+			           <div id="selected">
+			                   <table id="zsugarplus_relations"></table>
+			           </div>
+				   </fieldset>
+				</div>
+			</div>
+            <div id="zsugarplus_tabcontent_newobjects" style="display:none;"></div>
+            <div id="zsugarplus_tabcontent_options" style="display:none;"></div>
+        </div> 
+    </div>
+</template>

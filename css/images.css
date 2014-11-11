@@ -1,0 +1,46 @@
+.ImghelpBtn {
+	background: url('resources/help.png') 0 0px no-repeat;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+
+.ImgSugarContacts {
+	background: url("resources/contact.png") no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.ImgSugarProjects {
+	background: url("resources/project.png") no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.ImgSugarAccounts {
+	background: url("resources/account.png") no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.ImgSugarOpportunities {
+	background: url("resources/opportunity.png") no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.ImgSugarLeads {
+	background: url("resources/lead.png") no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.ImgzsugarplusIcon {
+	background: url("resources/ironsugar.png") no-repeat 0 0;
+	width: 16px;
+	height: 16px;
+}
+
+.ImgzsugarplusToolIcon {
+	background: url("resources/ironsugar.png") no-repeat 100% 50%;
+}

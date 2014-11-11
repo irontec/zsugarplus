@@ -1,0 +1,62 @@
+<template id="configDialog">
+	<!-- Login Data Configuration --> 
+	<fieldset class='gbPreferences'>
+	<legend><$=data.zsugarplus.getMessage("zsugarplus_logindata")$></legend>
+		<table border=1px>
+			<tr>
+			  <td width="130px"><$=data.zsugarplus.getMessage("zsugarplus_username")$>: </td>
+			  <td><input type="text" id="zsugarplus_username" size="30"></td>
+			  <td></td>
+			</tr>
+			<tr>
+			  <td><$=data.zsugarplus.getMessage("zsugarplus_password")$>: </td>
+			  <td><input type="password" id="zsugarplus_password" size="30"></td>
+			  <td></td>
+			</tr>
+			<tr>
+			  <td><$=data.zsugarplus.getMessage("zsugarplus_sugarurl")$>: </td>
+			  <td><input type="text" id="zsugarplus_sugarurl" size="40" value="http://web.example.com/sugar/">
+			  <td><span id="zsugarplus_sugarurlhelp"></span></td>
+			</tr>
+			<tr>
+			  <td><input type="checkbox" id="zsugarplus_ldapauth">
+				  <$=data.zsugarplus.getMessage("zsugarplus_ldapauth")$></td>
+			  <td><span id="zsugarplus_ldapauthhelp"></span></td>
+			  <td></td>
+			</tr>
+		</table>
+		<span id="zsugarplus_checkconfig"></span>	
+    </fieldset>		
+	
+	<!-- SugarCRM Modules configuration. Less modules to check.. faster will do it ;) -->	  
+	<fieldset class='gbPreferences'>		  
+	<legend><$=data.zsugarplus.getMessage("zsugarplus_modules")$></legend>
+		<table class="modulelist">
+			<tr>
+			  <td width="30%"><input type="checkbox" id="zsugarplus_accounts">
+			      <$=data.zsugarplus.getMessage("zsugarplus_accounts")$></td>
+			  <td width="30%"><input type="checkbox" id="zsugarplus_projects">
+			      <$=data.zsugarplus.getMessage("zsugarplus_projects")$></td>
+			  <td width="30%"><input type="checkbox" id="zsugarplus_opportunities">
+			      <$=data.zsugarplus.getMessage("zsugarplus_opportunities")$></td>			      			      
+			</tr>
+			<tr>
+			  <td width="30%"><input type="checkbox" id="zsugarplus_cases">
+			      <$=data.zsugarplus.getMessage("zsugarplus_cases")$></td>
+			  <td width="30%"><input type="checkbox" id="zsugarplus_leads">
+			      <$=data.zsugarplus.getMessage("zsugarplus_leads")$></td>
+			</tr>
+		</table>
+    </fieldset>		
+	
+	<!-- Another options -->
+	<fieldset class='gbPreferences'>		  
+	<legend><$=data.zsugarplus.getMessage("zsugarplus_searchopts")$></legend>
+		<table class="modulelist">
+			<tr>
+			  <td><input type="checkbox" id="zsugarplus_autosearch">
+			      <$=data.zsugarplus.getMessage("zsugarplus_autosearch")$></td>
+			</tr>
+		</table>
+    </fieldset>		
+</template>

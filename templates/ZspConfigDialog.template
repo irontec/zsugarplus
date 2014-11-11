@@ -1,0 +1,81 @@
+<template id="configDialog">
+	<!-- Login Data Configuration --> 
+	<fieldset class='gbPreferences'>
+	<legend><$=data.zsugarplus.getMessage("zsugarplus_logindata")$></legend>
+		<table>
+			<tr>
+			  <td width="130px"><$=data.zsugarplus.getMessage("zsugarplus_username")$>: </td>
+			  <td><input type="text" id="zsugarplus_username" size="30"></td>
+			  <td></td>
+			</tr>
+			<tr>
+			  <td><$=data.zsugarplus.getMessage("zsugarplus_password")$>: </td>
+			  <td><input type="password" id="zsugarplus_password" size="30"></td>			  
+			  <td></td>
+			</tr>
+			<tr>
+			  <td><$=data.zsugarplus.getMessage("zsugarplus_sugarurl")$>: </td>
+			  <td><input type="text" id="zsugarplus_sugarurl" size="40"></td>
+			  <td><span id="zsugarplus_sugarurlhelp"></span></td>
+			</tr>
+			<tr>
+			  <td colspan="2"><input type="checkbox" id="zsugarplus_ldapauth">
+				  <$=data.zsugarplus.getMessage("zsugarplus_ldapauth")$></td>
+			  <td><span id="zsugarplus_ldapauthhelp"></span></td>
+			</tr>
+		</table>
+		<span id="zsugarplus_checkconfig"></span>	
+    </fieldset>		
+	
+	<!-- SugarCRM Modules configuration. Less modules to check.. faster will do it ;) -->	  
+	<fieldset class='gbPreferences'>		  
+	<legend><$=data.zsugarplus.getMessage("zsugarplus_modules")$></legend>
+		<table class="modulelist">
+			<tr>
+			  <td>
+			  	<input type="checkbox" id="zsugarplus_accounts">
+			      <$=data.zsugarplus.getMessage("zsugarplus_accounts")$></td>
+			  <td><input type="checkbox" id="zsugarplus_projects">
+			      <$=data.zsugarplus.getMessage("zsugarplus_projects")$></td>
+			  <td><input type="checkbox" id="zsugarplus_opportunities">
+			      <$=data.zsugarplus.getMessage("zsugarplus_opportunities")$></td>			      			      
+			  <td><input type="checkbox" id="zsugarplus_cases">
+			      <$=data.zsugarplus.getMessage("zsugarplus_cases")$></td>
+			  <td><input type="checkbox" id="zsugarplus_leads">
+			      <$=data.zsugarplus.getMessage("zsugarplus_leads")$></td>
+			</tr>
+		</table>
+    </fieldset>
+	
+	<!-- Another options -->
+	<fieldset class='gbPreferences'>		  
+	<legend><$=data.zsugarplus.getMessage("zsugarplus_otheroptions")$></legend>
+		<table>
+			<tr>
+			  <td><input type="checkbox" id="zsugarplus_autosearch">
+			      <$=data.zsugarplus.getMessage("zsugarplus_autosearch")$></td>
+			</tr>
+			<td><input type="checkbox" id="zsugarplus_keepalive">
+			      <$=data.zsugarplus.getMessage("zsugarplus_keepalive")$></td>
+				  <td><span id="zsugarplus_keepalivehelp"></span></td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" id="zsugarplus_incrfetch">
+				  <$=data.zsugarplus.getMessage("zsugarplus_incrfetch")$></td>
+			  	<td><span id="zsugarplus_incrfetchhelp"></span></td>
+			</tr>
+			<tr>
+				<td><$=data.zsugarplus.getMessage("zsugarplus_importconv")$></td>
+				<td><span id="zsugarplus_importconv"></span></td>
+			</tr>
+			<tr>
+				<td><$=data.zsugarplus.getMessage("zsugarplus_ui_size")$></td>
+				<td><span id="zsugarplus_ui_size"></span></td>
+			</tr>		
+			<tr>
+				<td><$=data.zsugarplus.getMessage("zsugarplus_initab")$></td>
+				<td><span id="zsugarplus_initab"></span></td>
+			</tr>				
+		</table>
+    </fieldset>		
+</template>
